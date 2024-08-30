@@ -1,29 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Example Page Structure</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="icon" type="image/x-icon" href="assets/img/IntersectFavicon.png">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Example Page Structure</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="icon" type="image/x-icon" href="assets/img/IntersectFavicon.png">
+        <script src="assets/js/theme.js" defer></script>
+    </head>
 <body>
-    <header class="header">
-        <img src="https://www.figma.com/file/Tm8WLlWr50YDMpg2oOGErO/image/6ac5d8742a6ef970174e740a4dbbff680f4b5d21" alt="Logo" class="logo nav-item">
-        <a href="#" class="nav-item">Ideja</a>
-        <a href="#" class="nav-item">Piesaki Sapni</a>
-        <a href="#" class="nav-item">Uzņēmējiem</a>
-        <a href="#" class="nav-item">Sapņu banka</a>
-        <a href="#" class="nav-item">Sapņus atbalsta</a>
-        <a href="#" class="nav-item">99 Iedvesmas stāsti</a>
-        <a href="#" class="nav-item language-select">LV</a>
+    <header>
+        <nav class="navbar">
+            <div class="brand-logo">
+                <img src="https://www.figma.com/file/Tm8WLlWr50YDMpg2oOGErO/image/6ac5d8742a6ef970174e740a4dbbff680f4b5d21" alt="Logo" class="logo">
+            </div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="#">Ideja</a></li>
+                    <li><a href="#">Piesaki Sapni</a></li>
+                    <li><a href="#">Uzņēmējiem</a></li>
+                    <li><a href="#">Sapņu banka</a></li>
+                    <li><a href="#">Sapņus atbalsta</a></li>
+                    <li><a href="#">99 Iedvesmas stāsti</a></li>
+                    <li><a href="#"  class="language-select">LV</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
-    <!-- <div class="wave-border"><img src="assets/img/Subtractwave1.png" alt=""></div> -->
     <main>
-        <div>
-            <img src="https://www.figma.com/file/Tm8WLlWr50YDMpg2oOGErO/image/22275e8a6c462d4d699f3ac24d5c2b4692a366ca" alt="Video">
+        <div class="full-image-container">
+            <div class="centered-image">
+                <img src="assets/img/Group 2PlayButton.png" alt="">
+            </div>
         </div>
         <div class="container">
             <div class="centered-content">
@@ -49,43 +64,70 @@
                 <button class="button">Uzņēmējiem</button>
             </div>
         </div>
+        <div class="form-container">
+            <h2>SAZINĀTIES AR MUMS</h2>
+            <form>
+                <div class="form-group">
+                    <input type="text" placeholder="Vārds, Uzvārds*" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="E-pasts*" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Telefons*" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Jautājums, vai komentārs*" required></textarea>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="consent" required>
+                    <label for="consent">Piekrītu, ka mani dati tiks izmantoti likumdošanā noteiktā kārtībā un tiks saglabāti līdz brīdim, kamēr tas būs nepieciešams.</label>
+                </div>
+                <button type="submit" class="submit-btn">Sūtīt</button>
+            </form>
+            <p class="required-field">* obligāti aizpildāmie lauki</p>
+        </div>
         <div class="sponsors-container">
             <h2>Atbalstītāji</h2>
-            <div class="logo-container">
-                <img src="https://www.figma.com/file/Tm8WLlWr50YDMpg2oOGErO/image/48b914f73e741cc46b8d4c8a85465747ab3dfd81" alt="Logo 1" class="logo">
-                <img src="assets/img/sem_logo-2 1.png" alt="Logo 2" class="logo">
-                <img src="https://www.figma.com/file/Tm8WLlWr50YDMpg2oOGErO/image/559f89ad94a8adc56548226db3a5e7c40d65828e" alt="Logo 3" class="logo">
-                <img src="https://www.figma.com/file/Tm8WLlWr50YDMpg2oOGErO/image/6f1c91233d2577d04c268b765b2ce4edaa8f6107" alt="Logo 4" class="logo">
+            <div class="sponsors container">
+                <img src="https://www.figma.com/file/Tm8WLlWr50YDMpg2oOGErO/image/48b914f73e741cc46b8d4c8a85465747ab3dfd81" alt="Logo 1" class="sponsor-logo">
+                <img src="assets/img/sem_logo-2 1.png" alt="Logo 2" class="sponsor-logo">
+                <img src="https://www.figma.com/file/Tm8WLlWr50YDMpg2oOGErO/image/559f89ad94a8adc56548226db3a5e7c40d65828e" alt="Logo 3" class="sponsor-logo">
+                <img src="https://www.figma.com/file/Tm8WLlWr50YDMpg2oOGErO/image/6f1c91233d2577d04c268b765b2ce4edaa8f6107" alt="Logo 4" class="sponsor-logo">
             </div>
         </div>
+        <footer>
+            <div class="footer-logo footer-column">
+                <img src="https://www.figma.com/file/Tm8WLlWr50YDMpg2oOGErO/image/2a778093cfc794409f4d957d7528e1843e60ba9a" alt="Logo">
+            </div>
+            <div class="footer-column footer-links">
+                <ul>
+                    <li><a href="#">Ideja</a></li>
+                    <li><a href="#">Piesaki Sapni</a></li>
+                    <li><a href="#">Uzņēmējiem</a></li>
+                    <li><a href="#">Sapņu banka</a></li>
+                    <li><a href="#">Sapņus atbalsta</a></li>
+                    <li><a href="#">99 Iedvesmas stāsti</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Biedrība SparkleHeart</h3>
+                <p>Reģistrācijas nr. 40008293119</p>
+                <p>Banka: SWEDBANK A/S</p>
+                <p>LV52HABA0551047652465</p>
+            </div>
+            <div class="footer-column">
+                <h3>Juris Gogulis</h3>
+                <p>juris.gogulis@sparkleheart.org</p>
+                <p>+37126890034</p>
+                <p>Biķernieku iela 24a - 5, LV-1006</p>
+                <div class="social-icons">
+                    <div class="social-icon"><img src="assets/img/Vectorfb.png" alt=""></div>
+                    <div class="social-icon"><img src="assets/img/Vectorig.png" alt=""></div>
+                </div>
+            </div>
+        </footer>
     </main>
-    <footer class="footer">
-        <div class="footer-logo footer-column">
-            <img src="https://www.figma.com/file/Tm8WLlWr50YDMpg2oOGErO/image/2a778093cfc794409f4d957d7528e1843e60ba9a" alt="Logo">
-        </div>
-        <div class="footer-column">
-            <h3>Iegāja</h3>
-            <p>Pļaviņu iepire</p>
-            <p>Reģ.Nr. 40008028164</p>
-            <p>Uņiversitātes</p>
-            <p>Rīga, Latvļja</p>
-        </div>
-        <div class="footer-column">
-            <h3>Biedrība SparkleHeart</h3>
-            <p>Reģistrācijas nr. 40008293119</p>
-            <p>Banka: SWEDBANK A/S</p>
-            <p>LV52HABA0551047652465</p>
-        </div>
-        <div class="footer-column">
-            <h3>Juris Gogulis</h3>
-            <p>juris.gogulis@sparkleheart.org</p>
-            <p>+37126890034</p>
-            <p>Biķernieku iela 24a - 5, LV-1006</p>
-            <div class="social-icons">
-                <div class="social-icon"><img src="assets/img/Vectorfb.png" alt=""></div>
-                <div class="social-icon"><img src="assets/img/Vectorig.png" alt=""></div>
-            </div>
-        </div>
-    </footer>
 </body>
 </html>
