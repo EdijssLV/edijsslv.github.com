@@ -31,19 +31,33 @@ p{
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #ffffff;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-.nav {
-    display: flex;
-    gap: 20px;
+.logo{
+    width: 159px;
+    height: 146px;
 }
-.nav a {
+.nav-item {
     text-decoration: none;
-    color: #2F4858;
+    color: #333;
     font-size: 14px;
+    white-space: nowrap;
 }
 .language-select {
     font-weight: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.centered-content {
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
 }
 
 .image-strip {
@@ -59,9 +73,38 @@ p{
     object-fit: cover;
     flex-shrink: 0;
 }
+
+.container {
+    display: flex;
+    gap: 40px;
+    text-align: center;
+}
+.option {
+    max-width: 300px;
+}
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.button {
+    background-color: #FFA800;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.button:hover {
+    background-color: #FFCB66;
+}
+
 .sponsors-container {
     text-align: center;
     background-color: #FFCB66;
+    height: 482px;
 }
 h2 {
     color: #333;
